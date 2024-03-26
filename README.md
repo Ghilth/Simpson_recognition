@@ -1,1 +1,1 @@
-Ce projet vise à concevoir un modèle d'IA capable de reconnaître quelques personages des Simpsons et de révéler quelques informations sur ces derniers
+In this project; I tried to build a classification model about simpsons characters. You'll find a notebook for model training; final model file and a web app made with Flask to chat with model.
