@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-position: center center;
+    background-size: cover;
+    animation: backgroundAnimation 30s infinite;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color:yellow;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: rgb(65, 65, 59);
+    text-align: center;
+    font-family: 'fantasy';
+    margin: auto; /* Utilisez simplement "auto" pour centrer horizontalement */
+}
+
+section {
+    background-color: white;
+    margin-bottom: 100px;
+    }
+
+body p {
+    color: rgb(22, 18, 18);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+body input {
+    text-align: center;
+    color: rgb(70, 70, 58);
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:transparent;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+#text {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#text:hover {
+    transform: translateX(10px);
+}
+
+#image {
+    flex: 1;
+    text-align: right;
+    margin-top: 50px;
+}
+
+@keyframes backgroundAnimation {
+    0%, 100% {
+        background-image: url('image/simpsons-2006742_1920.jpg');
+    }
+    25% {
+        background-image: url('image/simpsons-4082522_1280.jpg');
+    }
+    50% {
+        background-image: url('image/simpsons-4082522_1280.jpg');
+    }
+    75% {
+        background-image: url('image/simpsons-4082521_1920\(1\).jpg');
+    }
+}
+
+/*footer*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#copyright, #contact, #about {
+    flex: 1;
+}
+
+#contact, #about {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+a:hover {
+    text-decoration: none;
+}

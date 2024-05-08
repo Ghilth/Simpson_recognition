@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+    <link rel="stylesheet"  type='text/css' href="{{url_for('static',filename='style.css')}}">
+
+
+    <style>
+
+        .resultat{
+            margin-top: 30px;
+            margin-top: 30px;
+
+            margin-left: 25%;
+            padding: 20px;
+            background-color: yellow;
+            border-radius: 15px;
+            width: 900px;
+
+            box-shadow: 5px 5px 5px 5px; 
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        
+        .text{
+             overflow: hidden; 
+            border-right: .15em solid orange; 
+            word-wrap:break-word;
+            margin: 0 auto; 
+            animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+         }
+
+        
+      
+    </style>
+
+
+
+
+       
+    </style>
+    
+</head>
+<body>
+
+    <div class="resultat">
+
+        <img src="{{url_for('static',filename='image/lol.jpg')}}" alt="">
+        <h1>{{modele_prediction}}</h1>
+        <div class="">
+            <p class="text">{{info_wiki}}</p>
+        </div>
+    </div>
+</body>
+</html>

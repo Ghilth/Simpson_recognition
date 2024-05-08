@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpson</title>:
+    <link rel="stylesheet"  type='text/css' href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+        <section class="section">
+            <header id="title"> <h1>The Simpsons</h1></header>
+        </section>
+        
+        
+   
+        <div id="content">
+            <div id="text">
+                
+                <p>Avec ma nouvelle app je t'aide à connaître davantage les personnages des Simpsons. 
+                    Il te suffit juste d'uploader l'image d'un personnage et en quelques secondes je t'en dirai plus.</p>
+                
+                <form action="{{url_for('traitement')}}" method="POST" enctype="multipart/form-data">
+
+                    <input type="file" name="img_submit"  required>
+                    <input type="submit" value="Soumettre" style="background-color: yellow;">
+
+                </form>    
+            </div>
+        </div>   
+    
+        <footer>
+            <div id="footer-content">
+                <div id="copyright">
+                    <p>&copy; 2024 copyright/The Simpsons</p>
+                </div>
+                <div id="contact">
+                    <a href="mailto:contact@exemple.com">Contactez-nous</a>
+                </div>
+                <div id="about">
+                    <a href="/a-propos">À propos de nous</a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
